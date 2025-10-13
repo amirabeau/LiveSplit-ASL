@@ -319,8 +319,8 @@ startup
   vars.gameFlags.Add("f5e7051f307dcf448a40d1f36e99a63dEncyclopediaItem", Tuple.Create("characterentry_unlock", "Yi", "GameFlagDescriptable") );
   vars.gameFlags.Add("fb1b6921c130f7a44b4bde4de9f3698fEncyclopediaItem", Tuple.Create("characterentry_unlock", "Shuanshuan Unlocked", "GameFlagDescriptable") );
   vars.gameFlags.Add("755f00ff0abccd8489ffc74eb9b77116EncyclopediaItem", Tuple.Create("characterentry_unlock", "Shuanshuan Completed", "GameFlagDescriptable") );
-  vars.gameFlags.Add("00c585e0186d60a4285e01d2e7247f54EncyclopediaItem", Tuple.Create("characterentry_unlock", "Shennong Unlocked", "GameFlagDescriptable") );
-  vars.gameFlags.Add("c43bc653acf552347acb74d53e36f1f3EncyclopediaItem", Tuple.Create("characterentry_unlock", "Shennong Completed", "GameFlagDescriptable") );
+  vars.gameFlags.Add("c43bc653acf552347acb74d53e36f1f3EncyclopediaItem", Tuple.Create("characterentry_unlock", "Shennong Unlocked", "GameFlagDescriptable") );
+  vars.gameFlags.Add("00c585e0186d60a4285e01d2e7247f54EncyclopediaItem", Tuple.Create("characterentry_unlock", "Shennong Completed", "GameFlagDescriptable") );
   vars.gameFlags.Add("4836fa6e9e0c66c4c8238a9c50885468EncyclopediaItem", Tuple.Create("characterentry_unlock", "Abacus - Ruyi Unlocked", "GameFlagDescriptable") );
   vars.gameFlags.Add("3d369fe813678e24a8d91c175a49505eEncyclopediaItem", Tuple.Create("characterentry_unlock", "Abacus - Ruyi Completed", "GameFlagDescriptable") );
   vars.gameFlags.Add("04d90cc08ac4b904d8d627052439857cEncyclopediaItem", Tuple.Create("characterentry_unlock", "Shanhai 9000 Unlocked", "GameFlagDescriptable") );
