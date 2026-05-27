@@ -144,8 +144,8 @@ startup
   vars.gameFlags.Add("b76de9e39b92a3642aaea5ef8280265fItemData", Tuple.Create("artifact_obtain", "Damaged Fusang Amulet", "GameFlagDescriptable") );
   vars.gameFlags.Add("0c76757489a7fa542b4351efc4731a49ItemData", Tuple.Create("artifact_obtain", "The Legend of the Porky Heroes", "GameFlagDescriptable") );
   vars.gameFlags.Add("c50645a6658fe4b429ea575c35c28ba3ItemData", Tuple.Create("artifact_obtain", "Portrait of Yi", "GameFlagDescriptable") );
-  vars.gameFlags.Add("ca5aaa95-152f-4234-907e-1ecf2fb44ca8_3ab980947561e27459c2316b2a59889bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer (Factory)", "ScriptableDataBool") );
-  vars.gameFlags.Add("3b54e07d-ef21-4316-979c-9dfc3462df9c_92a5cecaeb73b428fa0e2b6990d4fb1bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer (Sky Tower)", "ScriptableDataBool") );
+  vars.gameFlags.Add("ca5aaa95-152f-4234-907e-1ecf2fb44ca8_3ab980947561e27459c2316b2a59889bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer - Factory", "ScriptableDataBool") );
+  vars.gameFlags.Add("3b54e07d-ef21-4316-979c-9dfc3462df9c_92a5cecaeb73b428fa0e2b6990d4fb1bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer - Sky Tower", "ScriptableDataBool") );
   
   // Poisons
   vars.gameFlags.Add("c753eb7cbd4ae7048a0dcc715b23e6f0ItemData", Tuple.Create("poison_obtain", "Medicinal Citrine", "GameFlagDescriptable") );
