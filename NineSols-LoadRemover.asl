@@ -857,7 +857,6 @@ split {
           if (current.SceneIndex == vars.roomIndexes[boss.Value]) {
             if (settings[boss.Value] && !vars.CompletedSplits.Contains(boss.Value)) {
               print("splitting for: " + boss);
-              print("Boss posture system value: " + current.bossPostureSystem);
               vars.CompletedSplits.Add(boss.Value);
               return true;
             }
