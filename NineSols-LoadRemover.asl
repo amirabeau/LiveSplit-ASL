@@ -260,7 +260,7 @@ startup
   vars.gameFlags.Add("9ccb3d7d00f293041980e1e4d33c06e4MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 1", "MerchandiseData") );
   vars.gameFlags.Add("9b963c922b84fc74596a94d810e2d60dMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 2", "MerchandiseData") );
   vars.gameFlags.Add("33d4d47ddd5d37f40973741e0301bec2MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 3", "MerchandiseData") );
-  vars.gameFlags.Add("3dfda9c3eeb1d774da8f3ae5be10451cMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 4", "MerchandiseData") );3
+  vars.gameFlags.Add("3dfda9c3eeb1d774da8f3ae5be10451cMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 4", "MerchandiseData") );
   vars.gameFlags.Add("47335b6af1613b9468b9ad7043f0285dMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 5", "MerchandiseData") );
   vars.gameFlags.Add("b25b8174d0480844da649da6beb6e698MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 6", "MerchandiseData") );
   vars.gameFlags.Add("cc143dc7303dd2a4caabdb5a1db035f5MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 7", "MerchandiseData") );
