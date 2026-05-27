@@ -144,6 +144,8 @@ startup
   vars.gameFlags.Add("b76de9e39b92a3642aaea5ef8280265fItemData", Tuple.Create("artifact_obtain", "Damaged Fusang Amulet", "GameFlagDescriptable") );
   vars.gameFlags.Add("0c76757489a7fa542b4351efc4731a49ItemData", Tuple.Create("artifact_obtain", "The Legend of the Porky Heroes", "GameFlagDescriptable") );
   vars.gameFlags.Add("c50645a6658fe4b429ea575c35c28ba3ItemData", Tuple.Create("artifact_obtain", "Portrait of Yi", "GameFlagDescriptable") );
+  vars.gameFlags.Add("ca5aaa95-152f-4234-907e-1ecf2fb44ca8_3ab980947561e27459c2316b2a59889bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer (Factory)", "ScriptableDataBool") );
+  vars.gameFlags.Add("3b54e07d-ef21-4316-979c-9dfc3462df9c_92a5cecaeb73b428fa0e2b6990d4fb1bScriptableDataBool", Tuple.Create("artifact_obtain", "GM Fertilizer (Sky Tower)", "ScriptableDataBool") );
   
   // Poisons
   vars.gameFlags.Add("c753eb7cbd4ae7048a0dcc715b23e6f0ItemData", Tuple.Create("poison_obtain", "Medicinal Citrine", "GameFlagDescriptable") );
@@ -187,25 +189,82 @@ startup
   vars.gameFlags.Add("e235b00504a9145ed81edf6c2a2e0091ItemData", Tuple.Create("recyclable_obtain", "Passenger Token: Shiyangyue", "GameFlagDescriptable") );
 
   // Tao Fruits
-  vars.gameFlags.Add("5dca2439-7a4c-4e9e-9e66-a0282319627b_a1bc70e2b281c4edba29a867c61f2fb1ScriptableDataBool", Tuple.Create("taofruit_obtain", "Galactic Dock Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("1d9a273a-d817-4734-b0ae-8effef275a71_19ef97be8cb7b4fca9d79b754bb6c81cScriptableDataBool", Tuple.Create("taofruit_obtain", "Apeman Facility (Depths) Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("37adc43b-6e63-4f05-8641-7fa1e034a9ac_7592523794a14b241bbd479bdd35d2f3ScriptableDataBool", Tuple.Create("taofruit_obtain", "Power Reservoir (West) Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("994df5a4-716f-4a08-9730-161c9162fce2_3f513b824c96d4571937497e4cbbe5acScriptableDataBool", Tuple.Create("taofruit_obtain", "Water & Oxygen Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("e08b2605-4d1f-4a4e-b864-8a105f7af52b_286e6acc5d4484caa93380d46d08e162ScriptableDataBool", Tuple.Create("taofruit_obtain", "Inner Warehouse Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("6eef7fd0-7feb-493f-80ab-849699cc874b_6a7e9701c4ef0487683e312ec59d4d60ScriptableDataBool", Tuple.Create("taofruit_obtain", "Great Hall Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("37393fc2-f05b-4c94-8bb2-1e3f81e64ff8_3ab980947561e27459c2316b2a59889bScriptableDataBool", Tuple.Create("taofruit_obtain", "Great Hall (Herb Room) Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("b70de28f-4097-406c-8cf8-583870dc4ab5_104b8d0cf618434478e9e75ae3ee9d88ScriptableDataBool", Tuple.Create("taofruit_obtain", "Abandoned Mines Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("97d45562-89e6-463d-8740-4d1e012cfd18_92a5cecaeb73b428fa0e2b6990d4fb1bScriptableDataBool", Tuple.Create("taofruit_obtain", "Sky Tower Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("e08b2605-4d1f-4a4e-b864-8a105f7af52b_348738fb5673845a6aa8b023a95252cfScriptableDataBool", Tuple.Create("taofruit_obtain", "Empyrean (Living Area) Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("5e282a99-9049-4628-9eac-3d5820c72bcd_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Lear's Tomb Tao Fruit 1", "ScriptableDataBool") );
-  vars.gameFlags.Add("7531bdad-dc7e-47db-a640-386674f940dd_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Lear's Tomb Tao Fruit 2", "ScriptableDataBool") );
-  vars.gameFlags.Add("951a38fc-8260-4803-89ba-b8b7affd96c4_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Lear's Tomb Tao Fruit 3", "ScriptableDataBool") );
+  vars.gameFlags.Add("5dca2439-7a4c-4e9e-9e66-a0282319627b_a1bc70e2b281c4edba29a867c61f2fb1ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Galactic Dock", "ScriptableDataBool") );
+  vars.gameFlags.Add("1d9a273a-d817-4734-b0ae-8effef275a71_19ef97be8cb7b4fca9d79b754bb6c81cScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Apeman Facility (Depths)", "ScriptableDataBool") );
+  vars.gameFlags.Add("37adc43b-6e63-4f05-8641-7fa1e034a9ac_7592523794a14b241bbd479bdd35d2f3ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Power Reservoir (West)", "ScriptableDataBool") );
+  vars.gameFlags.Add("994df5a4-716f-4a08-9730-161c9162fce2_3f513b824c96d4571937497e4cbbe5acScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Water & Oxygen", "ScriptableDataBool") );
+  vars.gameFlags.Add("e08b2605-4d1f-4a4e-b864-8a105f7af52b_286e6acc5d4484caa93380d46d08e162ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Inner Warehouse", "ScriptableDataBool") );
+  vars.gameFlags.Add("6eef7fd0-7feb-493f-80ab-849699cc874b_6a7e9701c4ef0487683e312ec59d4d60ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Great Hall", "ScriptableDataBool") );
+  vars.gameFlags.Add("37393fc2-f05b-4c94-8bb2-1e3f81e64ff8_3ab980947561e27459c2316b2a59889bScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Great Hall (Herb Room)", "ScriptableDataBool") );
+  vars.gameFlags.Add("b70de28f-4097-406c-8cf8-583870dc4ab5_104b8d0cf618434478e9e75ae3ee9d88ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Abandoned Mines", "ScriptableDataBool") );
+  vars.gameFlags.Add("97d45562-89e6-463d-8740-4d1e012cfd18_92a5cecaeb73b428fa0e2b6990d4fb1bScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Sky Tower", "ScriptableDataBool") );
+  vars.gameFlags.Add("e08b2605-4d1f-4a4e-b864-8a105f7af52b_348738fb5673845a6aa8b023a95252cfScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Empyrean (Living Area)", "ScriptableDataBool") );
+  vars.gameFlags.Add("5e282a99-9049-4628-9eac-3d5820c72bcd_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Lear's Tomb 1", "ScriptableDataBool") );
+  vars.gameFlags.Add("7531bdad-dc7e-47db-a640-386674f940dd_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Lear's Tomb 2", "ScriptableDataBool") );
+  vars.gameFlags.Add("951a38fc-8260-4803-89ba-b8b7affd96c4_115aaa87e66aa794a98737572d1454c5ScriptableDataBool", Tuple.Create("taofruit_obtain", "Tao Fruit - Lear's Tomb 3", "ScriptableDataBool") );
 
-  vars.gameFlags.Add("37adc43b-6e63-4f05-8641-7fa1e034a9ac_c6768859162eb40abaffe7d2dfb703f4ScriptableDataBool", Tuple.Create("taofruit_obtain", "Machine Room Greater Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("18a7e188-ce20-495f-8ff9-49b2b0a78515_caffe6beb70444888bda9f21182c38a2ScriptableDataBool", Tuple.Create("taofruit_obtain", "Yanlao Greater Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("42e16c3d-e649-417c-909f-400422f8418b_f35dcb18f667441e18541169edcebb1fScriptableDataBool", Tuple.Create("taofruit_obtain", "Jiequan Greater Tao Fruit", "ScriptableDataBool") );
-  vars.gameFlags.Add("b70de28f-4097-406c-8cf8-583870dc4ab5_d5d14d9cbe2ff4247b9d7d1b58ae339bScriptableDataBool", Tuple.Create("taofruit_obtain", "Lady Ethereal Greater Tao Fruit", "ScriptableDataBool") );
+  vars.gameFlags.Add("37adc43b-6e63-4f05-8641-7fa1e034a9ac_c6768859162eb40abaffe7d2dfb703f4ScriptableDataBool", Tuple.Create("taofruit_obtain", "Greater Tao Fruit - Machine Room", "ScriptableDataBool") );
+  vars.gameFlags.Add("18a7e188-ce20-495f-8ff9-49b2b0a78515_caffe6beb70444888bda9f21182c38a2ScriptableDataBool", Tuple.Create("taofruit_obtain", "Greater Tao Fruit - Yanlao", "ScriptableDataBool") );
+  vars.gameFlags.Add("42e16c3d-e649-417c-909f-400422f8418b_f35dcb18f667441e18541169edcebb1fScriptableDataBool", Tuple.Create("taofruit_obtain", "Greater Tao Fruit - Jiequan", "ScriptableDataBool") );
+  vars.gameFlags.Add("b70de28f-4097-406c-8cf8-583870dc4ab5_d5d14d9cbe2ff4247b9d7d1b58ae339bScriptableDataBool", Tuple.Create("taofruit_obtain", "Greater Tao Fruit - Lady Ethereal", "ScriptableDataBool") );
   vars.gameFlags.Add("7212c72d-ce6c-4b5f-a536-4ec7a4e2934e_89b9e9ea7db2e4c118c7e8f1be3e7cf4ScriptableDataBool", Tuple.Create("taofruit_obtain", "Twin Tao Fruit", "ScriptableDataBool") );
+
+  // Dark Steel
+  vars.gameFlags.Add("c96e76d4-c946-454f-a8b0-4db846a5ced9_418debbb704b98748ae65f7fe6ccdc3cScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Central Transport Hub", "ScriptableDataBool") );
+  vars.gameFlags.Add("111b64cc-23fd-4b0d-b1df-f2893008b0b1_33549742cdf577a49aee4fd4feb91968ScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Boundless Repository", "ScriptableDataBool") );
+  vars.gameFlags.Add("8cc70dad-1c5d-45ab-b37a-c3ad3bc769f4_f7ef6a27206464d5ab379fbbc19ca08eScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Peach Blossom Village", "ScriptableDataBool") );
+  vars.gameFlags.Add("8b8ca1b2-39db-4850-94a2-15c35b2ddba2_4256ef2ec22f942dc9f70607bb00391fScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Empyrean District (Passages)", "ScriptableDataBool") );
+  vars.gameFlags.Add("07f3b10d-9898-4ca5-95ad-db4eb15cc565_b598ff87936dd4704b091233b5316a00ScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Grotto of Scriptures (Entry)", "ScriptableDataBool") );
+  vars.gameFlags.Add("d96cac9f-6975-4a5e-b573-f81d50c89407_fca3e578a1b174fc0bc7177e8c1ba3faScriptableDataBool", Tuple.Create("darksteel_obtain", "Dark Steel - Tiandao Research Center", "ScriptableDataBool") );
+  
+  // Bow Upgrades
+  vars.gameFlags.Add("faf6ea3275280401784f347f98bb6fecMerchandiseData", Tuple.Create("bowupgrade_obtain", "Azure Sand 1", "MerchandiseData") );
+  vars.gameFlags.Add("7318aa07da4844119a650c3f2d50e486MerchandiseData", Tuple.Create("bowupgrade_obtain", "Azure Sand 2", "MerchandiseData") );
+  vars.gameFlags.Add("177153ae6304f4b679710ba5a04ee73aMerchandiseData", Tuple.Create("bowupgrade_obtain", "Azure Sand 3", "MerchandiseData") );
+  vars.gameFlags.Add("6739393f679d15e499d5431d9dffbb90MerchandiseData", Tuple.Create("bowupgrade_obtain", "Cloud Piercer S", "MerchandiseData") );
+  vars.gameFlags.Add("83f988d88c5d5364192bdfcc23be4153MerchandiseData", Tuple.Create("bowupgrade_obtain", "Cloud Piercer X", "MerchandiseData") );
+  vars.gameFlags.Add("11c0763bddad6b344a1c35a1383beb78MerchandiseData", Tuple.Create("bowupgrade_obtain", "Thunder Buster S", "MerchandiseData") );
+  vars.gameFlags.Add("228a5782203c00f4584aada7b014bbd4MerchandiseData", Tuple.Create("bowupgrade_obtain", "Thunder Buster X", "MerchandiseData") );
+  vars.gameFlags.Add("45161198c2e944449a181d0a656b54edMerchandiseData", Tuple.Create("bowupgrade_obtain", "Shadow Hunter S", "MerchandiseData") );
+  vars.gameFlags.Add("d96112e1b741ec04ca845e028101feafMerchandiseData", Tuple.Create("bowupgrade_obtain", "Shadow Hunter X", "MerchandiseData") );
+
+  // Computing Unit
+  vars.gameFlags.Add("d2b3e894-4292-4efe-a627-f8c7e38d4891_8aeaa90a7d08d4fc3a5c59630fe9716cScriptableDataBool", Tuple.Create("computingunit_obtain", "Computing Unit - Four Seasons Pavilion", "ScriptableDataBool") );
+  vars.gameFlags.Add("f37a555f-9c4e-49ad-a9bd-14ccb57a87b7_c3c3f30fb046d9743aea48eb8f4833bcScriptableDataBool", Tuple.Create("computingunit_obtain", "Computing Unit - Power Reservoir (East)", "ScriptableDataBool") );
+  vars.gameFlags.Add("1ff756a9-e127-4e4d-984c-ae935ab7dfbd_18fd0ad3eb6b7416fa8fe27b79ec39c9ScriptableDataBool", Tuple.Create("computingunit_obtain", "Computing Unit - Empyrean District (Sanctum)", "ScriptableDataBool") );
+  vars.gameFlags.Add("9225907a-d6dd-43fc-83ab-73eb2349ea2e_d7288778de58e4b499992c97e2824bc0ScriptableDataBool", Tuple.Create("computingunit_obtain", "Computing Unit - Grotto of Scriptures (West)", "ScriptableDataBool") );
+  vars.gameFlags.Add("e7bb288a8b918054abe9edd7c314c7faMerchandiseData", Tuple.Create("computingunit_obtain", "Computing Unit - Chiyou 1", "MerchandiseData") );
+  vars.gameFlags.Add("cd12b658c686e8b41b00717202716715MerchandiseData", Tuple.Create("computingunit_obtain", "Computing Unit - Chiyou 2", "MerchandiseData") );
+  vars.gameFlags.Add("67004289e911d6f489c8c7eef283be74MerchandiseData", Tuple.Create("computingunit_obtain", "Computing Unit - Chiyou 3", "MerchandiseData") );
+  vars.gameFlags.Add("6439edc34fb0b484fb1cd6ac7de463f3MerchandiseData", Tuple.Create("computingunit_obtain", "Computing Unit - Chiyou 4", "MerchandiseData") );
+
+  // Pipe Vials
+  vars.gameFlags.Add("cb06d39a-44bb-4eed-9880-d00f7e4498bd_48d93add041e85048bc0d4331ff01727ScriptableDataBool", Tuple.Create("pipevial_obtain", "Pipe Vial - New Kunlun Central Hall", "ScriptableDataBool") );
+  vars.gameFlags.Add("2a9ba109-3700-4e08-95a5-4226e91e01e4_924b939d4c061b84e9e2482fbc4dd936ScriptableDataBool", Tuple.Create("pipevial_obtain", "Pipe Vial - Lake Yaochi Ruins", "ScriptableDataBool") );
+  vars.gameFlags.Add("5432620e751c4504f857c68bdf433c5fMerchandiseData", Tuple.Create("pipevial_obtain", "Pipe Vial - 3D Printer 1", "MerchandiseData") );
+  vars.gameFlags.Add("5a2fb49c5eabd754ea3499cf6c898685MerchandiseData", Tuple.Create("pipevial_obtain", "Pipe Vial - 3D Printer 2", "MerchandiseData") );
+  vars.gameFlags.Add("3555a119fbd577343bbbe9f117ba431eMerchandiseData", Tuple.Create("pipevial_obtain", "Pipe Vial - 3D Printer 3", "MerchandiseData") );
+  vars.gameFlags.Add("03d2eba01b313e14ea7980db97e2c876MerchandiseData", Tuple.Create("pipevial_obtain", "Pipe Vial - 3D Printer 4", "MerchandiseData") );
+
+  // Herb Catalyst
+  vars.gameFlags.Add("7637cf70-7b5f-430b-bd2f-eea133a5c780_34ebd07e21b942d408d976e0234bef26ScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Radiant Pagoda)", "ScriptableDataBool") );
+  vars.gameFlags.Add("b6d0b6bc-15c5-4945-9471-fec6c473edd3_3f513b824c96d4571937497e4cbbe5acScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Water & Oxygen Synthesis)", "ScriptableDataBool") );
+  vars.gameFlags.Add("ed76b409-ea0c-40ca-b7cf-9902da09c6a4_19ef97be8cb7b4fca9d79b754bb6c81cScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Apeman Facility (Depths))", "ScriptableDataBool") );
+  vars.gameFlags.Add("39bc402c-d3ba-467a-89eb-e8ca0d60d18d_286e6acc5d4484caa93380d46d08e162ScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Inner Warehouse", "ScriptableDataBool") );
+  vars.gameFlags.Add("4d19d7f5-0f37-44d3-bb5c-7c73425083c0_c6768859162eb40abaffe7d2dfb703f4ScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Factory (Machine Room)", "ScriptableDataBool") );
+  vars.gameFlags.Add("698409a7-a500-49f4-80db-b7338a50eb70_104b8d0cf618434478e9e75ae3ee9d88ScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Abandoned Mines", "ScriptableDataBool") );
+  vars.gameFlags.Add("af0efbc3-1c92-42cb-a76c-5351ea54d7ff_4256ef2ec22f942dc9f70607bb00391fScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Empyrean District (Passages)", "ScriptableDataBool") );
+  vars.gameFlags.Add("39bc402c-d3ba-467a-89eb-e8ca0d60d18d_51e5841c83cf44019b62eed666957473ScriptableDataBool", Tuple.Create("herbcatalyst_obtain", "Herb Catalyst - Grotto of Scriptures (East)", "ScriptableDataBool") );
+
+  // Pipe Upgrades
+  vars.gameFlags.Add("9ccb3d7d00f293041980e1e4d33c06e4MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 1", "MerchandiseData") );
+  vars.gameFlags.Add("9b963c922b84fc74596a94d810e2d60dMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 2", "MerchandiseData") );
+  vars.gameFlags.Add("33d4d47ddd5d37f40973741e0301bec2MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 3", "MerchandiseData") );
+  vars.gameFlags.Add("3dfda9c3eeb1d774da8f3ae5be10451cMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 4", "MerchandiseData") );3
+  vars.gameFlags.Add("47335b6af1613b9468b9ad7043f0285dMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 5", "MerchandiseData") );
+  vars.gameFlags.Add("b25b8174d0480844da649da6beb6e698MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 6", "MerchandiseData") );
+  vars.gameFlags.Add("cc143dc7303dd2a4caabdb5a1db035f5MerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 7", "MerchandiseData") );
+  vars.gameFlags.Add("ddb72c79080ae9f46bd52994358c2d1cMerchandiseData", Tuple.Create("pipeupgrade_obtain", "Pipe Upgrade 8", "MerchandiseData") );
 
   // Root Nodes
   vars.gameFlags.Add("3f4604f810c9e9a469f01d352d8035b9TeleportPointData", Tuple.Create("rootnode_unlock", "Galactic Dock", "GameFlagDescriptable") );
@@ -274,6 +333,7 @@ startup
   vars.gameFlags.Add("0626b4332cff9a04ea51ae1f645a0d3dGameLevelMapData", Tuple.Create("map_unlock_warehouse", "Inner Warehouse", "GameLevelMapData") );
   vars.gameFlags.Add("7ef7c38a76eabc54384407e924a0b730GameLevelMapData", Tuple.Create("map_unlock_warehouse", "Boundless Repository (Entrance)", "GameLevelMapData") );
   vars.gameFlags.Add("11ff35b24567fa343b857b647ba2668eGameLevelMapData", Tuple.Create("map_unlock_warehouse", "Boundless Repository (Inside)", "GameLevelMapData") );
+  vars.gameFlags.Add("7596f07b1a945444188499c708c71a1bGameLevelMapData", Tuple.Create("map_unlock_warehouse", "Claw Room", "GameLevelMapData") );
   vars.gameFlags.Add("1284f6d249c6cd44fb48ca86ec8f6977GameLevelMapData", Tuple.Create("map_unlock_warehouse", "Yangu Hall", "GameLevelMapData") );
 
   // Map Unlock: Abandoned Mines (Zone)
@@ -423,6 +483,12 @@ startup
   settings.Add("recyclable_obtain", true, "Recyclables", "item_obtain");
   settings.Add("mapchip_obtain", true, "Map Chips", "item_obtain");
   settings.Add("taofruit_obtain", true, "Tao Fruits", "item_obtain");
+  settings.Add("darksteel_obtain", true, "Dark Steel", "item_obtain");
+  settings.Add("bowupgrade_obtain", true, "Bow Upgrades", "item_obtain");
+  settings.Add("computingunit_obtain", true, "Computing Units", "item_obtain");
+  settings.Add("pipevial_obtain", true, "Pipe Vials", "item_obtain");
+  settings.Add("herbcatalyst_obtain", true, "Herb Catalysts", "item_obtain");
+  settings.Add("pipeupgrade_obtain", true, "Pipe Upgrades", "item_obtain");
 
   // Boss kill sub-groupings
   settings.Add("mainboss_kill", true, "Main Bosses", "boss_kill");
@@ -523,6 +589,7 @@ init
 
       vars.mobFlagExists = false;
       vars.FoundFlags = new HashSet<string>();
+      vars.FoundMerchandiseData = new HashSet<string>();
       foreach(IntPtr FlagPtr in AllFlags) {
          if(FlagPtr == IntPtr.Zero) {
              print("Flag was null. Waiting for all flags to be initialized before starting");
@@ -570,6 +637,15 @@ init
                vars.Helper[finalSaveID] = vars.Helper.Make<bool>(unlockedFieldPtr + 0x3a);
                   
                vars.FoundFlags.Add(finalSaveID);
+            }
+            else if (className == "MerchandiseData") {
+               //MerchandiseData.numLeftToBuy
+               IntPtr numLeftFieldPtr = vars.Helper.Read<IntPtr>(FlagPtr + 0x188);
+               
+               //MerchandiseData.numLeftToBuy._currentValue;
+               vars.Helper[finalSaveID] = vars.Helper.Make<int>(numLeftFieldPtr + 0x40);
+               
+               vars.FoundMerchandiseData.Add(finalSaveID);
             }
          }
          
@@ -666,6 +742,7 @@ update
     else { 
       // Go through the boss HP list and store the current posture system HP value
       // GameCore -> UIMonsterHPManager -> bossHPList<UIBossHP> (destruct)
+      current.bossPostureSystem = 0;
       foreach(IntPtr BossHPUI in vars.Helper["bossHPUIList"].Current) {
         IntPtr BossPosture = vars.Helper.Read<IntPtr>(BossHPUI + 0x70);
         current.bossHPBar = vars.Helper.Read<float>(BossHPUI + 0xa4);
@@ -679,13 +756,21 @@ update
     }
   }
 
+  if(vars.cameraManagerInitialized) {
+    current.cameraHighlightTime = vars.Helper.Read<float>(vars.Helper["currentCameraCore"].Current + 0xcc);
+    current.cameraHighlightEnabled = vars.Helper.Read<bool>(vars.Helper["currentCameraCore"].Current + 0xb0, 0x20);
+  }
+
   // Try to initialize the camera if it isn't initialized yet. We can't do it in init because the camera manager isn't initialized before loading a save for the first time
   if(!vars.cameraManagerInitialized)
   {
     try{
       var CameraManager = vars.mono["CameraManager",1];
-      vars.Helper["cameraHighlightTime"] = CameraManager.Make<float>("_instance", "currentCameraCore", 0xcc); 
-      vars.Helper["cameraHighlight"] = CameraManager.Make<bool>("_instance", "currentCameraCore", 0xb0, 0x20);
+      vars.Helper["currentCameraCore"] = CameraManager.Make<IntPtr>("_instance", "currentCameraCore");
+
+      current.cameraHighlightTime = 0.0f;
+      current.cameraHighlightEnabled = false;
+
       vars.cameraManagerInitialized = true;
       print("Camera Manager Initialized success");
     }
@@ -750,18 +835,29 @@ split {
           }
         }
       }
+    
+      /* Split on MerchandiseData.numLeftToBuy dropping to 0 */
+      foreach (var saveFlagID in vars.FoundMerchandiseData) {
+        if (settings[saveFlagID] && !vars.CompletedSplits.Contains(saveFlagID)) {
+          if (vars.Helper[saveFlagID].Current == 0) {
+            print("splitting for flag: " + vars.gameFlags[saveFlagID].Item1 + " - " + vars.gameFlags[saveFlagID].Item2);
+            vars.CompletedSplits.Add(saveFlagID);
+            return true;
+          }
+        }
+      }
     }
 
-    
     /* Split on Memories of Battle Boss Kill (experimental)
       Camera LastHitHighlight is the black and white effect on kill, and its time is set to 2f when the effect goes on screen. It has a HighlightCamera.enabled property i havent seen how to obtain yet.
       This would grab that duration as the trigger and also check if the boss has less than 1 HP for certain cases where it ends at less than 0.5 HP and fully dies after the black and white */
     if(vars.mobFlagExists && vars.Helper["MemoriesOfBattleFlag"].Current) {
-      if (vars.cameraManagerInitialized && vars.Helper["cameraHighlightTime"].Current != vars.Helper["cameraHighlightTime"].Old && vars.Helper["cameraHighlightTime"].Current > 1.95 && current.bossPostureSystem <= 1)  {
+      if (vars.cameraManagerInitialized && current.cameraHighlightTime > 1.5 && current.bossPostureSystem <= 1)  {
         foreach (var boss in vars.memoriesOfBattleBosses) {
           if (current.SceneIndex == vars.roomIndexes[boss.Value]) {
             if (settings[boss.Value] && !vars.CompletedSplits.Contains(boss.Value)) {
               print("splitting for: " + boss);
+              print("Boss posture system value: " + current.bossPostureSystem);
               vars.CompletedSplits.Add(boss.Value);
               return true;
             }
